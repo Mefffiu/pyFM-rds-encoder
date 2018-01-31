@@ -123,6 +123,9 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 rel_path = "/data/*_b.json"
 abs_file_path = script_dir + rel_path
 
+#if not os.path.exists(abs_file_path):
+#    os.makedirs(abs_file_path)
+
 files = glob.glob(abs_file_path)
 
 binary_messages_json = []

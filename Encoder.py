@@ -2,7 +2,7 @@ import glob
 import os
 import math
 from json import loads
-from NewGenerator import parseToBin
+from DataGenerator import parseToBin
 
 
 def create_group0(i, PI, TP, PTY, TA, MS, AF1, AF2, PS1, PS2):

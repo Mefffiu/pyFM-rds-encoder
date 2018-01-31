@@ -167,6 +167,9 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 rel_path = "/data/"
 abs_file_path = script_dir + rel_path
 
+if not os.path.exists(abs_file_path):
+    os.makedirs(abs_file_path)
+
 for i in text_messages:
     file = open(abs_file_path + str(text_messages.index(i)) + ".json", 'w')
     file.write(dumps(i))

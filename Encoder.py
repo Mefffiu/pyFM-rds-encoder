@@ -163,6 +163,8 @@ binary_messages_groups = []
 for m in binary_messages_json:
     binary_messages_groups.append(aggregate(m))
 
+
+# -------------------- Data for pyRDS.py --------------------
 rel_path = "/data/"
 abs_file_path = script_dir + rel_path
 for m in binary_messages_groups:
@@ -170,9 +172,9 @@ for m in binary_messages_groups:
     file.write(m)
     file.close()
 
-# -------------------- Data for prof. Zielinski Decoder --------------------
-# print len(binary_messages_groups[0])
-# file = open(abs_file_path + "FM_Radio_RDS.txt", 'a')
+# -------------------- Data for Test --------------------
+# decoder_file_path = script_dir + "/prof_Ziel_rds_bits_decoder/"
+# file = open(decoder_file_path + "FM_Radio_RDS.txt", 'a')
 # for bit in binary_messages_groups[0]:
 #     file.write(bit + "\n")
 # file.close()
